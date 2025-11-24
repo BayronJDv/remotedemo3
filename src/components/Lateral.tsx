@@ -39,7 +39,7 @@ const Lateral: React.FC = () => {
 
   return (
     <div className="lateralparent">
-      <h1>Shopping Cart</h1>
+      <h1>Demo Cart 🛒</h1>
       <div className="cart-list">
         {cartItems.length === 0 ? (
           <p>Your cart is empty</p>
