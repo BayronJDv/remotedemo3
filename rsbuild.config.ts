@@ -8,4 +8,11 @@ export default defineConfig({
   server: {
     port: 3001,
   },
+    output: {
+    // Si estamos en producción (Vercel), usa tu dominio real.
+    // Si estamos en local (dev), usa undefined (que por defecto es la raíz local).
+    assetPrefix: process.env.NODE_ENV === 'production' 
+      ? 'https://remotedemo3.vercel.app/' 
+      : undefined,
+  },
 });
