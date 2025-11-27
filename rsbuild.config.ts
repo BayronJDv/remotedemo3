@@ -6,7 +6,7 @@ import moduleFederationConfig from './module-federation.config';
 export default defineConfig({
   plugins: [pluginReact(), pluginModuleFederation(moduleFederationConfig)],
   server: {
-    port: 3001,
+    port: 3003,
   },
     output: {
     // Si estamos en producción (Vercel), usa tu dominio real.

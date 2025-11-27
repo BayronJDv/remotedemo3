@@ -1,29 +1,17 @@
-# Rsbuild Project
+# Microfrontend: Lateral (remote3)
 
-## Setup
+Este repositorio es un microfrontend remoto que expone el componente lateral (`Lateral`), utilizado como carrito de compras.
 
-Install the dependencies:
+## Funcionalidad
 
-```bash
-pnpm install
-```
+- Muestra los productos agregados al carrito.
+- Escucha eventos para actualizar su estado.
+- Expone el componente `Lateral` vía Module Federation.
+- Puerto por defecto: 3001 (Nota: Puede entrar en conflicto con `remote`, se sugiere cambiar a 3003 en `rsbuild.config.ts`).
 
-## Get Started
-
-Start the dev server:
-
-```bash
-pnpm dev
-```
-
-Build the app for production:
+## Ejecución
 
 ```bash
-pnpm build
-```
-
-Preview the production build locally:
-
-```bash
-pnpm preview
+npm install
+npm run dev
 ```
